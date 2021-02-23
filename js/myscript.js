@@ -3,7 +3,7 @@ var email;
 email = ["pippo@gmail.com", "pluto@gmail.com", "paperino@gmail.com", "topolino@gmail.com", "heidi@gmail.com"]
 
 // creo le variabili
-var bottonePass, mailCapture, procedi, bottoneRoll;
+var bottonePass, mailCapture, procedi, bottoneRoll, playerDice, pcDice, vincitore;
 
 // creo una funzione per poter verificare l'email inserita e far comparire il mio gioco
 bottonePass = document.getElementById("btn_pass");
@@ -28,7 +28,19 @@ bottonePass.addEventListener("click",
 bottoneRoll = document.getElementById("btn_roll");
 bottoneRoll.addEventListener("click", 
     function () {
-        
+        playerDice = (Math.round(Math.random() * 5) + 1);
+        pcDice = (Math.round(Math.random() * 5) + 1);
+        document.getElementById("player_dice").className = "d" + playerDice;
+        document.getElementById("pc_dice").className = "d" + pcDice;
+        if (playerDice > pcDice) {
+            document.getElementById("vincitore").innerHTML = "You Win!!!"
+        } else if (playerDice == pcDice) {
+            document.getElementById("vincitore").innerHTML = "- draw -"
+        } else {
+            document.getElementById("vincitore").innerHTML = "You lose."
+
+        }
+
     }
 );
 
