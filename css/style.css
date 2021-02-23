@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+.insert_email .wrapper {
+    background-color: lightgoldenrodyellow;
+}
+
+h1 {
+    color: red;
+    margin-top: 30px;
+}
+
+input {
+    margin: 15px 0;
+}
+
+.show {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+
+.little {
+    font-size: 40px;
+}
+
+.table {
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px grey;
+    justify-content: space-around;
+    background-color: olivedrab;
+}
+
+.roll_dice {
+    align-self: flex-start;
+}
+
+.col_player,
+.col_pc {
+    margin: 20px 0;
+}
+.btn {
+    margin: 20px 0;
+    background-color: yellow;
+    padding: 5px 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+.btn:hover {
+    transform: scale(1.2);
+    background-color: transparent;
+    color: yellow;
+    font-weight: 900;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+/* DADI */
+.d1::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 80px;
+    color: white;
+    content: "\f525";
+    padding-left: 5px;
+}
+.d2::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 80px;
+    color: white;
+    content: "\f528";
+    padding-left: 5px;
+}
+.d3::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 80px;
+    color: white;
+    content: "\f527";
+    padding-left: 5px;
+}
+.d4::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 80px;
+    color: white;
+    content: "\f524";
+    padding-left: 5px;
+}
+.d5::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 80px;
+    color: white;
+    content: "\f523";
+    padding-left: 5px;
+}
+.d6::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 80px;
+    color: white;
+    content: "\f526";
+    padding-left: 5px;
+}

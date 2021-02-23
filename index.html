@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Giochiamo a dadi</title>
+</head>
+<body>
+    <main>
+        <h1>Gioca ai dadi!</h1>
+
+        <section class="insert_mail">
+            <div class="wrapper">
+                <h2>Inserisci una mail valida se vuoi giocare ai dadi</h2>
+                <label for="email">Inserisci qui la tua e-mail:</label>
+                <input type="email" id="email"> 
+                <button id="btn_pass" class="">Verifica e-mail</button>
+
+            </div>
+        </section>
+        <section id="play_dice" class="hidden">
+            
+            <div class="wrapper">
+                <h2>Gioco dei dadi <i class="fas fa-dice little"></i></h2>
+                <div class="table">
+                    <div class="col_player">
+                        <h3>Il tuo dado:</h3>
+                        <div id="player_dice"></div>
+                    </div>
+                    <div class="roll_dice">
+                        <button id="btn_roll" class="btn">Tira i dadi!</button>
+
+                    </div>
+                    <div class="col_pc">
+                        <h3>Dado avversario:</h3>
+                        <div id="pc_dice"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script type="text/javascript" src="js/myscript.js">
+    </script>
+</body>
+</html>
